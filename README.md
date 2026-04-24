@@ -456,8 +456,7 @@ function fallback(){addMsg('معذرت — connection مسئلہ ہے۔ براہ
 
 // ═══════════════════════════════════════
 // GOOGLE SHEETS — اپنا URL یہاں ڈالیں:
-const SHEET_URL='https://script.google.com/macros/s/AKfycbzhc_V0hxSUQMj-4-kCDlmDIWYnI4iLG73VXA5NdcEvijIT8gXB4CbRp8al-8Gmn66dLA/exec';
-// ═══════════════════════════════════════
+const SHEET_URL='https://script.google.com/macros/s/AKfycbzhc_V0hxSUQMj-4-kCDlmDIWYnI4iLG73VXA5NdcEvijIT8gXB4CbRp8al-8Gmn66dLA/exec';// ═══════════════════════════════════════
 
 async function handleSubmit(e){
   e.preventDefault();
