@@ -456,7 +456,7 @@ function fallback(){addMsg('معذرت — connection مسئلہ ہے۔ براہ
 
 // ═══════════════════════════════════════
 // GOOGLE SHEETS — اپنا URL یہاں ڈالیں:
-const SHEET_URL='(https://script.google.com/macros/s/AKfycbzhc_V0hxSUQMj-4-kCDlmDIWYnI4iLG73VXA5NdcEvijIT8gXB4CbRp8al-8Gmn66dLA/exec)';
+const SHEET_URL='https://script.google.com/macros/s/AKfycbzhc_V0hxSUQMj-4-kCDlmDIWYnI4iLG73VXA5NdcEvijIT8gXB4CbRp8al-8Gmn66dLA/exec';
 // ═══════════════════════════════════════
 
 async function handleSubmit(e){
@@ -466,7 +466,7 @@ async function handleSubmit(e){
   const data={name:fd.get('name'),phone:fd.get('phone'),email:fd.get('email'),service:fd.get('service'),message:fd.get('message')||''};
   btn.textContent='بھیجا جا رہا ہے...';btn.disabled=true;
   try{
-    if(SHEET_URL==='(https://script.google.com/macros/s/AKfycbzhc_V0hxSUQMj-4-kCDlmDIWYnI4iLG73VXA5NdcEvijIT8gXB4CbRp8al-8Gmn66dLA/exec)'){await new Promise(r=>setTimeout(r,900));}
+    if(SHEET_URL==='https://script.google.com/macros/s/AKfycbzhc_V0hxSUQMj-4-kCDlmDIWYnI4iLG73VXA5NdcEvijIT8gXB4CbRp8al-8Gmn66dLA/exec'){await new Promise(r=>setTimeout(r,900));}
     else{await fetch(SHEET_URL,{method:'POST',mode:'no-cors',body:JSON.stringify(data)});}
     document.getElementById('mainForm').style.display='none';
     document.getElementById('suc').style.display='block';
